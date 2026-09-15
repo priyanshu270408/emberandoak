@@ -37,6 +37,46 @@
   .hairline {
     @apply border-charcoal/15;
   }
+
+  .menu-index {
+    @apply font-display italic text-terracotta text-6xl leading-none;
+    writing-mode: vertical-rl;
+  }
+
+  .section-marker {
+    @apply flex items-center gap-3;
+  }
+
+  .section-marker-line {
+    @apply block w-14 h-px bg-terracotta;
+  }
+
+  .menu-card-stack {
+    @apply relative bg-beige/35 border border-charcoal/15 px-5 sm:px-8 md:px-12;
+    transform: rotate(-0.45deg);
+  }
+
+  .menu-card-stack::before,
+  .menu-card-stack::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #bb6c43;
+  }
+
+  .menu-card-stack::before { top: 12px; left: 12px; border-right: 0; border-bottom: 0; }
+  .menu-card-stack::after { right: 12px; bottom: 12px; border-left: 0; border-top: 0; }
+
+  .menu-card-stamp {
+    @apply absolute right-4 top-4 text-center font-sans text-[9px] tracking-[0.22em] leading-tight text-terracotta/70;
+    transform: rotate(8deg);
+  }
+
+  .menu-card-stamp span { @apply text-[7px] tracking-[0.3em]; }
+
+  .menu-item-card { @apply transition-colors duration-300; }
+  .menu-item-card:hover { @apply bg-offwhite/60; }
 }
 
 /* ----- CSS 3D coffee cup ----- */

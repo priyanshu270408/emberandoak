@@ -7,7 +7,7 @@ export default function SignatureDish() {
     <section className="py-24 md:py-36 px-6 md:px-10 bg-beige/15">
       <div className="max-w-content mx-auto">
         <Reveal>
-          <p className="label-caps text-terracotta mb-5">The Signature</p>
+          <div className="section-marker mb-5"><span className="section-marker-line" /><p className="label-caps text-terracotta">The Signature / 01</p></div>
         </Reveal>
 
         <div className="grid md:grid-cols-12 md:items-center">

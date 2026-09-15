@@ -3,6 +3,11 @@ const img = (id, w = 1200) =>
 
 export const galleryImages = [
   {
+    src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-15%20at%2015.10.06-ymqmBngD7gQD2esum3zHM60QnH1MLb.jpeg',
+    alt: 'The Ember & Oak cafe menu board',
+    span: 'wide',
+  },
+  {
     src: img('photo-1447933601403-0c6688de566e'),
     alt: 'Latte art in a warm ceramic cup',
     span: 'tall',
@@ -31,5 +36,15 @@ export const galleryImages = [
     src: img('photo-1442512595331-e89e73853f31'),
     alt: 'The bar at golden hour',
     span: 'tall',
+  },
+  {
+    src: img('photo-1515003197210-e0cd71810b5f', 1400),
+    alt: 'Fresh seasonal ingredients on a table',
+    span: 'wide',
+  },
+  {
+    src: img('photo-1517248135467-4c7edcad34c4', 1400),
+    alt: 'Friends sharing a meal together',
+    span: 'small',
   },
 ]

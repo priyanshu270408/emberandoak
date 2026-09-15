@@ -6,7 +6,7 @@ export default function Hero() {
   const { open } = useReservation()
 
   return (
-    <section id="hero" className="relative h-screen h-[100svh] min-h-[640px] w-full overflow-hidden">
+    <section id="hero" className="relative h-screen h-[100svh] min-h-[600px] sm:min-h-[640px] w-full overflow-hidden">
       <Frame
         src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2000&q=80"
         alt="Warm, dimly lit dining room at Ember & Oak"

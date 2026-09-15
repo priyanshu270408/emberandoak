@@ -37,7 +37,7 @@ export default function Gallery() {
           </h2>
         </Reveal>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 auto-rows-[220px] gap-3 md:gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 auto-rows-[220px] sm:auto-rows-[180px] md:auto-rows-[220px] gap-3 md:gap-4">
           {galleryImages.map((image, i) => (
             <GalleryTile key={image.alt} image={image} delay={i * 60} />
           ))}

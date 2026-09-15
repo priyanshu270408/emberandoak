@@ -36,7 +36,7 @@ export default function Navbar() {
         solid ? 'bg-offwhite/95 backdrop-blur-sm shadow-[0_1px_0_0_rgba(74,65,60,0.12)]' : 'bg-transparent'
       }`}
     >
-      <div className="max-w-content mx-auto flex items-center justify-between px-6 md:px-10 h-20">
+      <div className="max-w-content mx-auto flex items-center justify-between px-4 sm:px-6 md:px-10 h-16 sm:h-20">
         <a
           href="#hero"
           className={`font-display text-lg tracking-[0.08em] transition-colors duration-500 ${

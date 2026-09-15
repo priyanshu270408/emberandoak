@@ -1,7 +1,6 @@
 import React from 'react'
 import Frame from './Frame'
 import { useReservation } from '../context/ReservationContext'
-import CoffeeCup from './CoffeeCup'
 
 export default function Hero() {
   const { open } = useReservation()
@@ -16,10 +15,6 @@ export default function Hero() {
         eager
       />
       <div className="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/50 to-charcoal/30" />
-
-      <div className="absolute right-[4vw] top-[13vh] hidden md:block">
-        <CoffeeCup />
-      </div>
 
       <div className="relative h-full max-w-content mx-auto px-6 md:px-10 flex flex-col justify-end pb-24 md:pb-28">
         <p className="hero-in label-caps text-beige mb-5" style={{ animationDelay: '150ms' }}>

@@ -3,11 +3,6 @@ const img = (id, w = 1200) =>
 
 export const galleryImages = [
   {
-    src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-15%20at%2015.10.06-ymqmBngD7gQD2esum3zHM60QnH1MLb.jpeg',
-    alt: 'The Ember & Oak cafe menu board',
-    span: 'wide',
-  },
-  {
     src: img('photo-1447933601403-0c6688de566e'),
     alt: 'Latte art in a warm ceramic cup',
     span: 'tall',

@@ -9,7 +9,7 @@ export default function Location() {
         <Reveal>
           <p className="label-caps text-terracotta mb-5">Visit</p>
           <h2 className="font-display text-4xl md:text-5xl leading-[1.1] mb-12">
-            Find us near the East Gate.
+            Find us in the hills.
           </h2>
 
           <div className="space-y-9">
@@ -20,9 +20,9 @@ export default function Location() {
                 <p className="text-charcoal/85 leading-relaxed">
                   Ember &amp; Oak
                   <br />
-                  18 Taj East Gate Road
+                  Bhimtal
                   <br />
-                  Agra, Uttar Pradesh
+                  Uttarakhand 263136
                 </p>
               </div>
             </div>
@@ -66,9 +66,9 @@ export default function Location() {
             <div className="relative flex flex-col items-center text-center px-8">
               <PinIcon className="text-terracotta" width="30" height="30" />
               <p className="label-caps text-offwhite mt-5">Find Us</p>
-              <p className="text-offwhite/60 text-sm mt-2">Near Taj East Gate</p>
+              <p className="text-offwhite/60 text-sm mt-2">Bhimtal, Uttarakhand</p>
               <a
-                href="https://www.google.com/maps/search/?api=1&query=18+Taj+East+Gate+Road+Agra+Uttar+Pradesh"
+                href="https://www.google.com/maps/search/?api=1&query=Bhimtal+Uttarakhand+263136"
                 target="_blank"
                 rel="noreferrer"
                 className="label-caps mt-8 inline-flex items-center gap-2 px-6 py-3 border border-offwhite/50 text-offwhite hover:bg-offwhite hover:text-charcoal transition-colors duration-300"

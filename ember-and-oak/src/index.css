@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-offwhite text-charcoal font-sans antialiased;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #bb6c43;
+    color: #ebefee;
+  }
+
+  :focus-visible {
+    outline: 2px solid #bb6c43;
+    outline-offset: 3px;
+  }
+
+  section {
+    scroll-margin-top: 88px;
+  }
+}
+
+@layer components {
+  /* Small tracked-out label used for section kickers, nav items, buttons */
+  .label-caps {
+    @apply font-sans uppercase text-xs tracking-[0.22em] font-semibold;
+  }
+
+  /* Hairline rule, used instead of card borders/shadows */
+  .hairline {
+    @apply border-charcoal/15;
+  }
+}
+
+/* ----- Scroll reveal ----- */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ----- Hero load-in sequence (single orchestrated moment) ----- */
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-in {
+  opacity: 0;
+  animation: riseIn 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ----- Menu category fade-in on filter change ----- */
+@keyframes menuFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menu-fade {
+  animation: menuFadeIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ----- Gentle marquee-free scroll cue ----- */
+@keyframes scrollDrift {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 1;
+  }
+}
+
+.scroll-cue {
+  animation: scrollDrift 2.4s ease-in-out infinite;
+}
+
+/* ----- Reservation modal open transition ----- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalRise {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.modal-backdrop {
+  animation: fadeIn 0.35s ease-out forwards;
+}
+
+.modal-panel {
+  animation: modalRise 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal,
+  .hero-in,
+  .menu-fade,
+  .scroll-cue,
+  .modal-backdrop,
+  .modal-panel {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

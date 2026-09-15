@@ -1,0 +1,7 @@
+{
+  "name": "emberandoak-vercel-root",
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix ember-and-oak install && npm --prefix ember-and-oak run build"
+  }
+}

@@ -1,4 +1,4 @@
-export const categories = ['Starters', 'Main Course', 'Desserts', 'Drinks']
+export const categories = ['Starters', 'Main Course', 'Burgers', 'Pizzas', 'Noodles & Pasta', 'Desserts', 'Drinks']
 
 export const menuItems = [
   {
@@ -98,4 +98,19 @@ export const menuItems = [
     price: 215,
     veg: true,
   },
+  { id: 13, category: 'Starters', name: 'Chilly Cheese Toast', description: 'Toasted bread, melted cheese, green chilli', price: 90, veg: true },
+  { id: 14, category: 'Starters', name: 'Crispy Fried Paneer Burger', description: 'Crispy paneer, fresh vegetables, house sauce', price: 130, veg: true },
+  { id: 15, category: 'Main Course', name: 'Classic Minestrone Soup', description: 'Traditional Italian vegetable soup', price: 80, veg: true },
+  { id: 16, category: 'Main Course', name: 'Chinese Manchow Soup', description: 'Vegetables and mushrooms with a spicy finish', price: 90, veg: true },
+  { id: 17, category: 'Burgers', name: 'K.T. Burger', description: 'Crispy fried chicken with fresh vegetables and house sauce', price: 95 },
+  { id: 18, category: 'Burgers', name: 'Veggie Club House Burger', description: 'Grilled vegetables, cheese, lettuce and tomato', price: 80, veg: true },
+  { id: 19, category: 'Burgers', name: 'Chilly Cheese Burger', description: 'Crispy patty, cheese, jalapeño and house sauce', price: 80, veg: true },
+  { id: 20, category: 'Pizzas', name: 'House Smoked Barbeque Chicken', description: 'Smoked chicken, red onion, barbecue sauce', price: 180 },
+  { id: 21, category: 'Pizzas', name: 'Piri-Piri Pizza', description: 'Chicken, fries, garlic, onion and cheese', price: 180 },
+  { id: 22, category: 'Pizzas', name: 'Mediterranean Veg', description: 'Fresh vegetables, pomodoro sauce and herbs', price: 150, veg: true },
+  { id: 23, category: 'Noodles & Pasta', name: 'Penne Chilly Dry', description: 'Penne tossed with vegetables and chilli', price: 90, veg: true },
+  { id: 24, category: 'Noodles & Pasta', name: 'Spring Roll Veg.', description: 'Crisp vegetable spring rolls with dip', price: 80, veg: true },
+  { id: 25, category: 'Noodles & Pasta', name: 'Aglio e Olio', description: 'Spaghetti, garlic, olive oil and parsley', price: 120, veg: true },
+  { id: 26, category: 'Desserts', name: 'Sizzling Brownie', description: 'Warm brownie with chocolate sauce and ice cream', price: 120, veg: true },
+  { id: 27, category: 'Desserts', name: 'Chocolate Fudge Brownie', description: 'Hand-dipped chocolate brownie with fudge', price: 120, veg: true },
 ]

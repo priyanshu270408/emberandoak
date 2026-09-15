@@ -7,7 +7,7 @@ export default function Menu() {
   const items = menuItems.filter((item) => item.category === active)
 
   return (
-    <section id="menu" className="py-24 md:py-36 px-6 md:px-10">
+    <section id="menu" className="py-20 sm:py-24 md:py-36 px-4 sm:px-6 md:px-10">
       <div className="max-w-content mx-auto">
         <Reveal className="max-w-lg">
           <p className="label-caps text-terracotta mb-5">The Menu</p>
@@ -17,7 +17,7 @@ export default function Menu() {
         </Reveal>
 
         <Reveal delay={100}>
-          <div className="mt-14 flex flex-wrap gap-x-8 gap-y-3 border-b border-charcoal/15 pb-6">
+          <div className="mt-10 sm:mt-14 -mx-4 px-4 sm:mx-0 sm:px-0 flex flex-nowrap sm:flex-wrap gap-x-7 gap-y-3 overflow-x-auto border-b border-charcoal/15 pb-4 sm:pb-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {categories.map((cat) => (
               <button
                 key={cat}
@@ -37,7 +37,7 @@ export default function Menu() {
         <div key={active} className="menu-fade mt-4 max-w-3xl">
           {items.map((item, index) => (
             <div key={item.id} className={`py-6 ${index !== 0 ? 'border-t border-charcoal/10' : ''}`}>
-              <div className="flex flex-wrap md:flex-nowrap items-baseline gap-x-4 gap-y-1">
+              <div className="flex flex-wrap sm:flex-nowrap items-baseline gap-x-3 sm:gap-x-4 gap-y-1">
                 <span className="font-display italic text-clay text-sm shrink-0">
                   {String(item.id).padStart(2, '0')}
                 </span>
